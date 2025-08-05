@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', function () {
           id: 'sanitasOptima',
           title: 'Sanitas Óptima',
           icon: 'fa-solid fa-heart-pulse',
-          image: './assets/images/seguros/06.jpg',
+          image: './assets/images/seguros/optima.jpeg',
           intro: 'Seguro de salud con acceso completo a especialistas.',
           topics: [
             'Consultas con especialistas y medicina general.',
@@ -90,6 +90,18 @@ document.addEventListener('DOMContentLoaded', function () {
             'No incluye hospitalización ni cirugías programadas.',
             'Sin carencia (excepto partos y psicología).',
             'Con copagos moderados (pago por uso de los servicios).'
+          ]
+        },
+        {
+          id: 'sanitasOptima',
+          title: 'Seguro médico de Sanitas para mayores',
+          icon: 'fa-solid fa-heart-pulse',
+          image: './assets/images/seguros/06.jpg',
+          intro: 'A un precio reducido, sin límite de edad.',
+          topics: [
+            'Sin límite de edad de contratación.',
+            'Sin carencias en casi todos los servicios.',
+            'El y sin cuestinario de salud.',
           ]
         }
       ]
@@ -145,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
           id: 'sanitasEstudiantes',
           title: 'Seguro de Salud para Estudiantes',
           icon: 'fa-solid fa-graduation-cap',
-          image: './assets/images/seguros/10.jpg',
+          image: './assets/images/seguros/estudante.jpeg',
           intro: 'Seguro ideal para estudiantes extranjeros que vienen a estudiar a España.',
           topics: [
             'Cobertura completa: consultas, especialistas, exámenes, urgencias y hospitalización.',
@@ -209,13 +221,23 @@ document.addEventListener('DOMContentLoaded', function () {
   // Inserir o HTML do modal na página
   modalsContainer.innerHTML = modalsHTML;
 
+  let seguroIndex = 0; // Adicionamos um contador para os seguros
   categorias.forEach(categoria => {
     segurosHTML += `<div class="sec-title centered mt-3 mb-3"><h4>${categoria.nome}</h4></div>`;
     segurosHTML += `<div class="row clearfix">`;
 
     categoria.seguros.forEach(seguro => {
-      const htmlTopics = seguro.topics.slice(0, 3)
+      let topicsToShow;
+      // Condição para exibir todos os tópicos se for um dos 3 primeiros seguros
+      if (seguroIndex < 3) {
+        topicsToShow = seguro.topics;
+      } else {
+        topicsToShow = seguro.topics.slice(0, 3);
+      }
+      
+      const htmlTopics = topicsToShow
         .map(topic => `<li><i class="fa-solid fa-check"></i> ${topic}</li>`).join('');
+
       segurosHTML += `
         <div class="security-block col-lg-4 col-md-6 col-sm-12">
             <div class="inner-box">
@@ -240,6 +262,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </div>
         </div>
       `;
+      seguroIndex++; // Incrementa o contador para cada seguro processado
     });
     segurosHTML += `</div>`;
   });
