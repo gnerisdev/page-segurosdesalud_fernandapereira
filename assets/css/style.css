@@ -841,7 +841,7 @@ img{
 }
 
 .logo img{
-	height: 56px !important;
+	height: 80px !important;
 }
 
 .main-header .header-upper{
@@ -859,13 +859,9 @@ img{
 	float:right;
 }
 
-.header-upper .pull-left {
-	transform: translateY(10px);
-}
-
 .main-header .header-upper .logo-box{
 	position: relative;
-	padding:0px 0px;
+	padding:8px 0px;
 	width: fit-content;
 }
 

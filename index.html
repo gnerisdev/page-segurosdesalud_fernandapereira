@@ -40,7 +40,7 @@
 						<div class="pull-left logo-box">
 							<div class="logo">
 								<a href="index.html">
-									<img src="./assets/images/logo.png" alt="Logo Agente Sanitas">
+									<img src="./assets/images/logo.avif" alt="Logo Agente Sanitas">
 								</a>
 							</div>
 						</div>
@@ -91,7 +91,7 @@
 					<!--Logo-->
 					<div class="logo pull-left">
 						<a href="index.html" title="">
-							<img src="./assets/images/logo.png" alt="Logo Agente Sanitas">
+							<img src="./assets/images/logo.avif" alt="Logo Agente Sanitas">
 						</a>
 					</div>
 					<!--Right Col-->
@@ -120,8 +120,6 @@
 
 		<!--Banner Section-->
 		<section class="banner-section">
-			<img src="./assets/images/wave.svg" class="wave">
-
 			<div class="slide">
 				<div class="image-layer" style="background-image:url(assets/images/banner-main.jpg)"></div>
 				<div class="auto-container">
@@ -151,11 +149,10 @@
 	<!--End Banner Section-->
 
 	<!-- Fluid Section One -->
-<section class="py-5 text-center" style="background-color: #007acc; position: relative; overflow: hidden;">
-  
-  <!-- Ícone de fundo -->
-  <i class="fa-solid fa-user-shield" 
-     style="
+	<section class="py-5 text-center" style="background-color: #007acc; position: relative; overflow: hidden;">
+
+		<!-- Ícone de fundo -->
+		<i class="fa-solid fa-user-shield" style="
        position: absolute;
        top: 50%;
        left: 0;
@@ -164,28 +161,27 @@
        color: rgba(255, 255, 255, 0.05);
        z-index: 1;
      ">
-  </i>
+		</i>
 
-  <div class="container text-white" style="position: relative; z-index: 2;">
-    <h2 class="mb-3 fw-bold">
-      Fernanda Pereira
-    </h2>
-    <h5 class="fw-normal mb-4">
-      Tu mediadora de seguros Sanitas en España<br>
-      Especialista en seguros para estudiantes, residentes y familias
-    </h5>
+		<div class="container text-white" style="position: relative; z-index: 2;">
+			<h2 class="mb-3 fw-bold">
+				Fernanda Pereira
+			</h2>
+			<h5 class="fw-normal mb-4">
+				Tu mediadora de seguros Sanitas en España<br>
+				Especialista en seguros para estudiantes, imigrantes, residentes y familias.
+			</h5>
 
-    <p class="mb-4">
-      <i class="fa-solid fa-comments me-2"></i>
-      Atención personalizada en portugués y español
-    </p>
+			<p class="mb-4">
+				<i class="fa-solid fa-comments me-2"></i>
+				Atención personalizada en portugués y español
+			</p>
 
-    <a href="https://wa.me/34611447280" 
-       class="btn btn-light btn-lg rounded-pill shadow">
-      <i class="fa-solid fa-circle me-2"></i> Descubre tu seguro ideal
-    </a>
-  </div>
-</section>
+			<a href="https://wa.me/34611447280" class="btn btn-light btn-lg rounded-pill shadow">
+				<i class="fa-solid fa-circle me-2"></i> Descubre tu seguro ideal
+			</a>
+		</div>
+	</section>
 
 
 	<!-- End Fluid Section One -->
@@ -320,22 +316,34 @@
 					<div class="inner-column">
 						<div class="phone flaticon-call-3"></div>
 						<div class="text">
-							<span>Seguro de salud o visado</span>
-							<br>Teléfono: <span>+34 611 44 72 80</span>
+							<p style="font-size: 20px; font-weight: 400; margin-bottom: 0.5rem; line-height: 1.4em;">
+								<i class="fas fa-circle" style="font-size: 10px; margin-right: 8px;"></i>
+								¿Necesitas un seguro para visado o salud privada?
+							</p>
+							<p style="font-size: 20px; font-weight: 400; margin-bottom: 0.5rem; line-height: 1.4em;">
+								<i class="fas fa-phone-alt" style="margin-right: 8px;"></i>
+								Llámame o completa el formulario
+							</p>
+							<p style="font-size: 20px; font-weight: 400; margin-bottom: 0.5rem; line-height: 1.4em;">
+								<i class="fas fa-clock" style="margin-right: 8px;"></i>
+								Recibirás atención personalizada en menos de 24h.
+							</p>
+							<br>
+							Teléfono: <span>+34 611 44 72 80</span>
 						</div>
 					</div>
 				</div>
 
 				<!-- Form Column -->
-				<div class="form-column col-lg-6 col-md-12 col-sm-12" style="max-width: 580px; margin: auto;">
+				<div class="form-column col-lg-6 col-md-12 col-sm-12" style="max-width: 580px; margin: 16px auto auto;">
 					<h3 style="color: #fff; text-align: center;">Ponte en contacto</h3>
 					<div class="inner-column">
 						<form action="contacto.php" method="post" class="default-form">
 							<div class="form-group mb-2">
-								<input type="text" name="nombre" placeholder="Nombre" class="form-control" required>
+								<input name="nombre" placeholder="Nombre" class="form-control" required>
 							</div>
 							<div class="form-group mb-2">
-								<input type="Apelido" name="correo" placeholder="Correo electrónico" class="form-control" required>
+								<input name="apelido" placeholder="Apelido" class="form-control" required>
 							</div>
 							<div class="form-group mb-2">
 								<input type="email" name="correo" placeholder="Correo electrónico" class="form-control" required>
@@ -345,7 +353,7 @@
 							</div>
 							<div class="form-group-button">
 								<button type="submit" class="btn-personalizado">
-									Enviar <i class="fa-solid fa-paper-plane"></i> 
+									Enviar <i class="fa-solid fa-paper-plane"></i>
 								</button>
 							</div>
 						</form>
@@ -646,6 +654,17 @@
 	<footer class="main-footer">
 		<div class="auto-container">
 			<!-- Upper Box -->
+
+			<div class="text-center mb-3 pt-5">
+				<div class="d-flex flex-column align-items-center">
+					<img src="./assets/images/fernanda.jpeg" alt="Agente Sanitas - Fernanda" class="rounded-circle border border-primary"
+						style="width: 140px; height: 140px; object-fit: cover;">
+					<h6 class="fw-normal mt-3">
+						Fernanda Pereira | Tu mediadora de seguros Sanitas
+					</h6>
+				</div>
+			</div>
+
 			<div class="upper-box">
 				<div class="row justify-content-center">
 					<!-- Column -->
@@ -653,7 +672,8 @@
 						<div class="row justify-content-center gap-4">
 
 							<!-- Contact Info Box -->
-							<div class="column col-lg-4 col-md-4 col-sm-12">
+							<!-- Contact Info Box -->
+							<div class="column col-lg-4 col-md-4 col-sm-12 mt-3">
 								<ul class="contact-info-box">
 									<li>
 										<span class="icon fa-solid fa-phone"></span>
@@ -664,18 +684,18 @@
 							</div>
 
 							<!-- Contact Info Box -->
-							<div class="column col-lg-4 col-md-4 col-sm-12" style="width: 100%;">
+							<div class="column col-lg-4 col-md-4 col-sm-12 mt-3">
 								<ul class="contact-info-box">
 									<li>
 										<span class="icon fa-solid fa-envelope"></span>
 										Correo electrónico
-										<small><strong>seguros@fernandapereira.es</strong></small>
+										<small><strong>segurosfernandapereira@gmail.com</strong></small>
 									</li>
 								</ul>
 							</div>
 
 							<!-- Contact Info Box -->
-							<div class="column col-lg-4 col-md-4 col-sm-12">
+							<div class="column col-lg-4 col-md-4 col-sm-12 mt-3">
 								<ul class="contact-info-box">
 									<li>
 										<span class="icon fa-solid fa-clock"></span>
@@ -685,6 +705,17 @@
 								</ul>
 							</div>
 
+							<div class="column col-lg-4 col-md-4 col-sm-12 mt-3">
+								<ul class="contact-info-box">
+									<li>
+										<a href="instagram.com/segurosdesalud_fernandapereira" target="_blank" style="color: #fff">
+											<span class="icon fa-solid fa-instagram"></span>
+											Seguir en instagram
+											<small><strong>@segurosdesalud_fernandapereira</strong></small>
+										</a>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
