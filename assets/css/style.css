@@ -6504,7 +6504,7 @@ margin-right: 10px;
 #iframe-animation {
 	position: absolute; 
 	top: 22%;
-	z-index: 99; 
+	z-index: 9; 
 	width: 570px;
 	height: 100%;
 	margin-left: 50%;
