@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         topicsToShow = seguro.topics.slice(0, 3);
       }
-      
+
       const htmlTopics = topicsToShow
         .map(topic => `<li><i class="fa-solid fa-check"></i> ${topic}</li>`).join('');
 
@@ -307,4 +307,40 @@ document.addEventListener('DOMContentLoaded', function () {
       infoModal.show();
     });
   });
+
+  // Language
+  const languageSelector = document.querySelector('.language-selector');
+  const currentLanguage = document.querySelector('.current-language');
+
+  currentLanguage.addEventListener('click', function () {
+    languageSelector.classList.toggle('open');
+  });
+
+  document.addEventListener('click', function (event) {
+    if (!languageSelector.contains(event.target)) {
+      languageSelector.classList.remove('open');
+    }
+  });
+
+  const url = window.location.pathname;
+  const isPortuguese = url.startsWith('/pt');
+
+  if (isPortuguese) {
+    currentLanguage.innerHTML = `
+        <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="Bandeira de Portugal" />
+        <span>Português</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      `;
+    languageSelector.querySelector('.language-list li:first-child').style.display = 'none';
+    languageSelector.querySelector('.language-list li:last-child').style.display = 'flex';
+
+  } else {
+    currentLanguage.innerHTML = `
+        <img src="https://flagicons.lipis.dev/flags/4x3/es.svg" alt="Bandeira da Espanha" />
+        <span>Español</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      `;
+    languageSelector.querySelector('.language-list li:first-child').style.display = 'flex';
+    languageSelector.querySelector('.language-list li:last-child').style.display = 'none';
+  }
 });

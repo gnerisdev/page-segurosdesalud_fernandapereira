@@ -19,15 +19,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-	<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-	<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
 </head>
 
 <body class="hidden-bar-wrapper">
-
 	<div class="page-wrapper">
-
 		<!-- Preloader -->
 		<div class="preloader"></div>
 
@@ -119,33 +114,16 @@
 		<!-- End Main Header -->
 
 		<!--Banner Section-->
-		<section class="banner-section">
+		<section class="banner-section" style="position: relative;">
 			<div class="slide">
 				<div class="image-layer" style="background-image:url(assets/images/banner-main.jpg)"></div>
-				<div class="auto-container">
-					<!-- Content Boxed -->
-					<!-- <div class="content-boxed">
-							<div class="inner-boxed">
-								<div class="title">Fernanda Pereira</div>
-								<h1>Sua Mediadora de <br> Seguros en España</h1>
-								<div class="text">
-									Especialista en seguros para estudiantes, residentes y familias.
-								</div>
-								<div class="btns-box clearfix">
-									<a href="https://wa.me/34611447280?text=Hola%2C%20Fernanda.%20Estoy%20interesad%40%20en%20contratar%20un%20seguro."
-										class="theme-btn btn-style-one">
-										<span class="txt">
-											<i class="flaticon-shield-1"></i>
-											Elige tu mejor seguro
-										</span>
-									</a>
-								</div>
-							</div>
-						</div> -->
-				</div>
 			</div>
-	</div>
-	</section>
+			<iframe 
+				src="./animation.html" 
+				frameborder="0"
+				id="iframe-animation"
+			></iframe>
+		</section>
 	<!--End Banner Section-->
 
 	<!-- Fluid Section One -->
@@ -272,9 +250,9 @@
 						</div>
 						<!--Lower Content-->
 						<div class="lower-content">
-							<h5><a href="#">seguro de salud para estudiantes</a></h5>
+							<h5><a href="#">Seguro de salud para estudiantes</a></h5>
 							<div class="designation">
-								El seguro de salud que mejor se ajusta a tus necesidades y a las de tu familia. Incluye coberturas exclusivas para los autónomos.
+								Sanitas International Students es un seguro médico para extranjeros que cursan sus estudios en España y tengan una edad de entre 14 y 35 años. 
 							</div>
 						</div>
 					</div>
@@ -657,8 +635,12 @@
 
 			<div class="text-center mb-3 pt-5">
 				<div class="d-flex flex-column align-items-center">
-					<img src="./assets/images/fernanda.jpeg" alt="Agente Sanitas - Fernanda" class="rounded-circle border border-primary"
-						style="width: 140px; height: 140px; object-fit: cover;">
+					<img 
+						src="./assets/images/fernanda.jpeg" 
+						alt="Agente Sanitas - Fernanda" 
+						class="rounded-circle border border-primary"
+						style="width: 140px; height: 140px; object-fit: cover; object-position: top;"
+					>
 					<h6 class="fw-normal mt-3">
 						Fernanda Pereira | Tu mediadora de seguros Sanitas
 					</h6>
@@ -672,6 +654,16 @@
 						<div class="row justify-content-center gap-4">
 
 							<!-- Contact Info Box -->
+							<div class="column col-lg-4 col-md-4 col-sm-12 mt-3">
+								<ul class="contact-info-box">
+									<li>
+										<span class="icon fa-solid fa-clock"></span>
+										Horario de atención
+										<small><strong>09:00 - 18:00</strong></small>
+									</li>
+								</ul>
+							</div>
+
 							<!-- Contact Info Box -->
 							<div class="column col-lg-4 col-md-4 col-sm-12 mt-3">
 								<ul class="contact-info-box">
@@ -694,22 +686,11 @@
 								</ul>
 							</div>
 
-							<!-- Contact Info Box -->
-							<div class="column col-lg-4 col-md-4 col-sm-12 mt-3">
-								<ul class="contact-info-box">
-									<li>
-										<span class="icon fa-solid fa-clock"></span>
-										Horario de atención
-										<small><strong>09:00 - 18:00</strong></small>
-									</li>
-								</ul>
-							</div>
-
 							<div class="column col-lg-4 col-md-4 col-sm-12 mt-3">
 								<ul class="contact-info-box">
 									<li>
 										<a href="instagram.com/segurosdesalud_fernandapereira" target="_blank" style="color: #fff">
-											<span class="icon fa-solid fa-instagram"></span>
+											<span class="icon fa-brands fa-instagram"></span>
 											Seguir en instagram
 											<small><strong>@segurosdesalud_fernandapereira</strong></small>
 										</a>
@@ -737,10 +718,8 @@
 									</div>
 								</div>
 							</div>
-
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -750,6 +729,30 @@
 
 	</div>
 	<!--End pagewrapper-->
+
+	<div class="language-selector-container">
+		<div class="language-selector">
+			<div class="current-language">
+				<img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="Bandeira de Portugal" />
+				<span>Português</span>
+				<i class="fa-solid fa-chevron-down"></i>
+			</div>
+			<ul class="language-list">
+				<li>
+					<a href="/pt/">
+						<img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="Bandeira de Portugal" />
+						<span>Português</span>
+					</a>
+				</li>
+				<li>
+					<a href="/">
+						<img src="https://flagicons.lipis.dev/flags/4x3/es.svg" alt="Bandeira da Espanha" />
+						<span>Español</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 
 	<!-- Botão WhatsApp Fixo -->
 	<a href="https://wa.me/34611447280" target="_blank" class="whatsapp-fixo">
