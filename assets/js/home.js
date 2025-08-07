@@ -327,7 +327,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (isPortuguese) {
     currentLanguage.innerHTML = `
-        <img src="https://flagicons.lipis.dev/flags/4x3/pt.svg" alt="Bandeira de Portugal" />
+        <img src="https://flagicons.lipis.dev/flags/4x3/br.svg" alt="Bandeira de Portugal" />
         <span>Português</span>
         <i class="fa-solid fa-chevron-down"></i>
       `;
